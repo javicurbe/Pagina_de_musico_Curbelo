@@ -1,0 +1,36 @@
+/* COLORES */
+$fondoOscuro: #002855;
+
+$fondoMedio: #023e7d;
+
+$fondoClaro: #0353a4;
+
+$colorFormulario: white;
+
+/* BORDES */
+$bordesContacto: solid 7px #002855;
+
+$bordesAcomodar: 7px;
+
+/* OPERACIONES */
+/* Inicio */
+.bordesAcomodar {
+    border: solid ($bordesAcomodar + 10px) $fondoOscuro;
+}
+
+/* DISPLAY */
+$displayIn: inline;
+
+/* CONTACTO */
+.textoFormulario {
+    color: $colorFormulario;
+    background-color: $fondoOscuro;
+}
+
+.bordesContacto {
+    border: $bordesContacto;
+}
+
+.displayInline {
+    display: $displayIn;
+}

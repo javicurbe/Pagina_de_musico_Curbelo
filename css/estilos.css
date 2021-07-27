@@ -1,0 +1,473 @@
+/* COLORES */
+/* BORDES */
+/* OPERACIONES */
+.bordesAcomodar {
+  border: solid 10px #002855; }
+
+/* DISPLAY */
+/* CONTACTO */
+.textoFormulario {
+  color: white;
+  background-color: #002855; }
+
+.bordesContacto {
+  border: solid 7px #002855; }
+
+.displayInline {
+  display: inline; }
+
+  /*ESTILOS CSS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #002855;
+  /*Alineación*/
+  text-align: justify;
+  /*Fuente*/
+  font-family: 'Source Sans Pro', sans-serif;
+  /*Interlineado*/
+  line-height: 1.5;
+}
+
+h1 {
+  color: white;
+  background-color: #33415C;
+  padding-left: 7px;
+}
+
+h2 {
+  color: white;
+  background-color: #33415C;
+  padding-left: 7px;
+}
+
+h3 {
+  color: white;
+  background-color: #33415C;
+  padding-left: 7px;
+}
+
+ul {
+  color: white;
+  background-color: #002855;
+}
+
+ol {
+  color: white;
+  background-color: #002855;
+}
+
+a {
+  color: white;
+}
+
+p {
+  color: white;
+  background-color: #002855;
+  padding: 7px;
+}
+
+table {
+  color: white;
+  background-color: #023E7D;
+}
+
+td {
+  background-color: #0353A4;
+}
+
+th {
+  padding: 15px 15px;
+}
+
+li {
+  margin: 5px 50px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: #33415C;
+  height: 150px;
+}
+
+/*CLASES*/
+/*Menu*/
+.menuFlex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.menu {
+  background-color: #33415C; 
+}
+
+.menu a {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Submenu*/
+.submenu {
+  float: left;
+}
+
+.submenu .submenuBoton {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10.5px 8px;
+  background-color: #33415C;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.submenuContent {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #33415c;
+  width: 100%;
+}
+
+.submenuContent a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/*Portada*/
+.fondoImagen {
+  width: 100%;
+  margin-top: 7px;
+}
+
+/*Inicio*/
+.imagenBorde {
+  margin-left: 465px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Sobre mí*/
+.bordesWiki {
+  border: solid 7px #002855;
+}
+
+.flexSobreMi {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*Noticias*/
+.noticiasFlex {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.article {
+  background-color: #002855;
+}
+
+/*Tienda*/
+#div {
+  background-color: #0353A4;
+  margin: 5px;
+  padding: 5px;
+  border: solid #99a2ac 7px;
+  transition: background-color 1ms;
+}
+
+.textoTienda {
+  background-color: #0353A4;
+  color: white;
+  font-size: 20px;
+  padding: 2px;
+  text-align: center;
+}
+
+.gridRopa {
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+
+#gorra {
+  padding: 50px 0px 40px 0px;
+}
+
+.gridOtros {
+  display: grid;
+  grid-template-columns: 200px;
+}
+
+.productos {
+  display: block;
+  margin: auto;
+}
+
+/*Eventos*/
+.paddingEventos {
+  padding: 0px 7px 0px 7px;
+}
+
+/*Discografía*/
+.fondoLista {
+  background-color: #0353A4;
+}
+
+.bordesCD {
+  border: solid 7px #002855;
+}
+
+.bordesSencillos {
+  border-top: solid 7px #002855;
+  border-right: solid 7px #002855;
+  border-bottom: solid 7px #002855;
+  border-left: solid 25px #002855;
+  background-color: #002855;
+}
+
+/*Texto*/
+.italica {
+  font-style: italic;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.textoGrande {
+  font-size: 35px;
+}
+
+.textoPorcentaje {
+  font-size: 130%;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.centrar {
+  text-align: center;
+}
+
+/*Pie de página*/
+.paddingFooter {
+  padding-top: 45px; 
+}
+
+.grad {
+  background-image: linear-gradient(#002855, #33415C);
+}
+
+#pieDePagina {
+  background-color: #33415C;
+}
+
+/*Lista*/
+.adentro {
+  list-style-position:inside;
+}
+
+/*MEDIA QUERIES*/
+/*Smartphone*/
+@media (max-width: 480px) {
+  body {
+      background-color: #0353a4;
+  }
+
+  p {
+      background-color: #0353a4;
+  }
+
+  .bordesWiki {
+      border-top: solid 7px #0353a4;
+      border-right: solid 7px #0353a4;
+      border-bottom: solid 0px #0353a4;
+      border-left: solid 7px #0353a4;
+  }
+  
+  .article {
+      background-color: #0353a4;
+  }
+
+  .accordion-item {
+      background-color: #0353a4;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+  #div {
+      background-color: #0353A4;
+      margin: 5px;
+      padding: 5px;
+      border: solid #0353a4 7px;
+  }
+
+  .bordesCD {
+      border: solid 7px #33415C;
+  }
+
+  .bordesSencillos {
+      border-top: solid 7px #0353a4;
+      border-right: solid 7px #0353a4;
+      border-bottom: solid 7px #0353a4;
+      border-left: solid 25px #0353a4;
+      background-color: #0353a4;
+  }
+
+  .grad {
+      background-image: linear-gradient(#0353a4, #33415C);
+  }
+}
+
+/*Tablet*/
+@media (min-width: 481px) {
+  body {
+      background-color: #023e7d;
+  }
+
+  p {
+      background-color: #023e7d;
+  }
+
+  .bordesWiki {
+      border-top: solid 7px #023e7d;
+      border-right: solid 7px #023e7d;
+      border-bottom: solid 0px #023e7d;
+      border-left: solid 7px #023e7d;
+  }
+  
+  .article {
+      background-color: #023e7d;
+  }
+
+  .accordion-item {
+      background-color: #023e7d;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+  #div {
+      background-color: #0353A4;
+      margin: 5px;
+      padding: 5px;
+      border: solid #023E7D 7px;
+  }
+
+  .bordesCD {
+      border: solid 7px #33415C;
+  }
+
+  .bordesSencillos {
+      border-top: solid 7px #023e7d;
+      border-right: solid 7px #023e7d;
+      border-bottom: solid 7px #023e7d;
+      border-left: solid 25px #023e7d;
+      background-color: #023e7d;
+  }
+
+  .grad {
+      background-image: linear-gradient(#023e7d, #33415C);
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1025px) {
+  body {
+      background-color: #002855;
+  }
+
+  p {
+      background-color: #002855;
+  }
+
+  .bordesWiki {
+      border-top: solid 7px #002855;
+      border-right: solid 7px #002855;
+      border-bottom: solid 0px #002855;
+      border-left: solid 7px #002855;
+  }
+  
+  .article {
+      background-color: #002855;
+  }
+
+  .accordion-item {
+      background-color: #002855;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+  #div {
+      background-color: #0353A4;
+      margin: 5px;
+      padding: 5px;
+      border: solid #023E7D 7px;
+  }
+
+  .bordesCD {
+      border: solid 7px #002855;
+  }
+
+  .bordesSencillos {
+      border-top: solid 7px #002855;
+      border-right: solid 7px #002855;
+      border-bottom: solid 7px #002855;
+      border-left: solid 25px #002855;
+      background-color: #002855;
+  }
+
+  .grad {
+      background-image: linear-gradient(#002855, #33415C);
+  }
+}
+
+/*TRANSICIONES*/
+/*Menú y Submenú*/
+.menu a:hover, .submenu:hover .submenuBoton {
+  background-color: #5c677d;
+}
+
+.submenuContent a:hover {
+  background-color: #5c677d;
+  color: white;
+}
+
+.submenu:hover .submenuContent {
+  display: block;
+}
+
+/*Tienda*/
+#div:hover {
+  background-color: #b8c1ca;
+}
+
+/*ANIMACIONES*/
+/*Inicio*/
+.key {
+  animation-name: latido;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-duration: 2s;
+}
+
+@keyframes latido {
+  0% { /*Principio*/
+      transform: scale(0.75, 0.75);
+  }
+
+  50% {
+      transform: scale(1, 1);
+  }
+
+  100% { /*Final*/
+      transform: scale(0.75, 0.75);
+  }
+}
