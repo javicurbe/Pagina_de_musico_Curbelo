@@ -1,36 +1,460 @@
-/* COLORES */
+// ALINEACIÓN
+$centrada: center;
+
+$justi: justify;
+
+// BORDE
+$bordes: solid 7px #002855;
+
+// COLORES
 $fondoOscuro: #002855;
 
 $fondoMedio: #023e7d;
 
 $fondoClaro: #0353a4;
 
-$colorFormulario: white;
+$fondoGris: #33415C;
 
-/* BORDES */
-$bordesContacto: solid 7px #002855;
+$blanco: white;
 
-$bordesAcomodar: 7px;
+// FUENTE
+$letra: 'Source Sans Pro', sans-serif;
 
-/* OPERACIONES */
-/* Inicio */
-.bordesAcomodar {
-    border: solid ($bordesAcomodar + 10px) $fondoOscuro;
+/*ESTILOS CSS*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: $fondoOscuro;
+    text-align: $justi;
+    font-family: $letra;
+    line-height: 1.5;
 }
 
-/* DISPLAY */
-$displayIn: inline;
+h1, h2, h3 {
+    color: $blanco;
+    background-color: $fondoGris;
+    padding-left: 7px;
+}
 
-/* CONTACTO */
-.textoFormulario {
-    color: $colorFormulario;
+ul, ol {
+    color: $blanco;
     background-color: $fondoOscuro;
 }
 
-.bordesContacto {
-    border: $bordesContacto;
+a {
+    color: $blanco;
 }
 
-.displayInline {
-    display: $displayIn;
+p {
+    color: $blanco;
+    background-color: $fondoOscuro;
+    padding: 7px;
+}
+
+table {
+    color: $blanco;
+    background-color: $fondoMedio;
+}
+
+td {
+    background-color: $fondoClaro;
+}
+
+th {
+    padding: 15px 15px;
+}
+
+li {
+    margin: 5px 50px;
+}
+
+footer {
+    color: $blanco;
+    text-align: $centrada;
+    background-color: $fondoGris;
+    height: 150px;
+}
+
+/*CLASES*/
+/*Menu*/
+.menuFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.menu {
+    background-color: $fondoGris;
+}
+
+.menu a {
+    font-size: 18px;
+    color: $blanco;
+    text-align: $centrada;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-family: $letra;
+}
+
+/*Submenu*/
+.submenu {
+    float: left;
+}
+
+.submenu .submenuBoton {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: $blanco;
+    padding: 10.5px 8px;
+    background-color: $fondoGris;
+    font-family: $letra;
+}
+
+.submenuContent {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: $fondoGris;
+    width: 100%;
+}
+
+.submenuContent a {
+    float: left;
+    color: $blanco;
+    text-decoration: none;
+}
+
+/*Portada*/
+.fondoImagen {
+    width: 100%;
+    margin-top: 7px;
+}
+
+/*Pie de página*/
+.paddingFooter {
+    padding-top: 45px;
+}
+
+.grad {
+    background-image: linear-gradient($fondoOscuro, $fondoGris);
+}
+
+#pieDePagina {
+    background-color: $fondoGris;
+}
+
+/*Lista*/
+.adentro {
+    list-style-position: inside;
+}
+
+/*SECCIONES*/
+/*Inicio*/
+.imagenBorde {
+    margin-left: 465px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Sobre Mí*/
+.bordesWiki {
+    border: $bordes;
+}
+
+.flexSobreMi {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*Noticias*/
+.noticiasFlex {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.article {
+    background-color: $fondoOscuro;
+}
+
+/*Tienda*/
+#div {
+    background-color: $fondoClaro;
+    margin: 5px;
+    padding: 5px;
+    border: solid #99a2ac 7px;
+    transition: background-color 1ms;
+}
+
+.textoTienda {
+    background-color: $fondoClaro;
+    color: $blanco;
+    font-size: 20px;
+    padding: 2px;
+    text-align: $centrada;
+}
+
+.gridRopa {
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+
+#gorra {
+    padding: 50px 0px 40px 0px;
+}
+
+.gridOtros {
+    display: grid;
+    grid-template-columns: 200px;
+}
+
+.productos {
+    display: block;
+    margin: auto;
+}
+
+/*Eventos*/
+.paddingEventos {
+    padding: 0px 7px 0px 7px;
+}
+
+/*Discografía*/
+.fondoLista {
+    background-color: $fondoClaro;
+}
+
+.bordesCD {
+    border: $bordes;
+}
+
+.bordesSencillos {
+    border-top: $bordes;
+    border-right: $bordes;
+    border-bottom: $bordes;
+    border-left: solid 25px $fondoOscuro;
+    background-color: $fondoOscuro;
+}
+
+/*OTROS*/
+/*Texto*/
+.italica {
+    font-style: italic;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.textoGrande {
+    font-size: 35px;
+}
+
+.textoPorcentaje {
+    font-size: 130%;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.centrar {
+    text-align: $centrada;
+}
+
+/*MEDIA QUERIES*/
+/*Smartphone*/
+@media (max-width: 480px) {
+    body {
+        background-color: $fondoClaro;
+    }
+
+    p {
+        background-color: $fondoClaro;
+    }
+
+    .bordesWiki {
+        border-top: solid 7px $fondoClaro;
+        border-right: solid 7px $fondoClaro;
+        border-bottom: solid 0px $fondoClaro;
+        border-left: solid 7px $fondoClaro;
+    }
+
+    .article {
+        background-color: $fondoClaro;
+    }
+
+    .accordion-item {
+        background-color: $fondoClaro;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+    #div {
+        background-color: $fondoClaro;
+        margin: 5px;
+        padding: 5px;
+        border: solid $fondoClaro 7px;
+    }
+
+    .bordesCD {
+        border: solid 7px $fondoGris;
+    }
+
+    .bordesSencillos {
+        border-top: solid 7px $fondoClaro;
+        border-right: solid 7px $fondoClaro;
+        border-bottom: solid 7px $fondoClaro;
+        border-left: solid 25px $fondoClaro;
+        background-color: $fondoClaro;
+    }
+
+    .grad {
+        background-image: linear-gradient($fondoClaro, $fondoGris);
+    }
+}
+
+
+/*Tablet*/
+@media (min-width: 481px) {
+    body {
+        background-color: $fondoMedio;
+    }
+
+    p {
+        background-color: $fondoMedio;
+    }
+
+    .bordesWiki {
+        border-top: solid 7px $fondoMedio;
+        border-right: solid 7px $fondoMedio;
+        border-bottom: solid 0px $fondoMedio;
+        border-left: solid 7px $fondoMedio;
+    }
+
+    .article {
+        background-color: $fondoMedio;
+    }
+
+    .accordion-item {
+        background-color: $fondoMedio;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+    #div {
+        background-color: $fondoMedio;
+        margin: 5px;
+        padding: 5px;
+        border: solid $fondoMedio 7px;
+    }
+
+    .bordesCD {
+        border: solid 7px $fondoGris;
+    }
+
+    .bordesSencillos {
+        border-top: solid 7px $fondoMedio;
+        border-right: solid 7px $fondoMedio;
+        border-bottom: solid 7px $fondoMedio;
+        border-left: solid 25px $fondoMedio;
+        background-color: $fondoMedio;
+    }
+
+    .grad {
+        background-image: linear-gradient($fondoMedio, $fondoGris);
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1025px) {
+    body {
+        background-color: $fondoOscuro;
+    }
+
+    p {
+        background-color: $fondoOscuro;
+    }
+
+    .bordesWiki {
+        border-top: solid 7px $fondoOscuro;
+        border-right: solid 7px $fondoOscuro;
+        border-bottom: solid 0px $fondoOscuro;
+        border-left: solid 7px $fondoOscuro;
+    }
+
+    .article {
+        background-color: $fondoOscuro;
+    }
+
+    .accordion-item {
+        background-color: $fondoOscuro;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+    #div {
+        background-color: $fondoOscuro;
+        margin: 5px;
+        padding: 5px;
+        border: solid $fondoOscuro 7px;
+    }
+
+    .bordesCD {
+        border: solid 7px $fondoGris;
+    }
+
+    .bordesSencillos {
+        border-top: solid 7px $fondoOscuro;
+        border-right: solid 7px $fondoOscuro;
+        border-bottom: solid 7px $fondoOscuro;
+        border-left: solid 25px $fondoOscuro;
+        background-color: $fondoOscuro;
+    }
+
+    .grad {
+        background-image: linear-gradient($fondoOscuro, $fondoGris);
+    }
+}
+
+/*TRANSICIONES*/
+/*Menú y Submenú*/
+.menu a:hover, .submenu:hover .submenuBoton {
+    background-color: #5c677d;
+}
+
+.submenuContent a:hover {
+    background-color: #5c677d;
+    color: $blanco;
+}
+
+.submenu:hover .submenuContent {
+    display: block;
+}
+
+/*Tienda*/
+#div:hover {
+    background-color: #b8c1ca;
+}
+
+/*ANIMACIONES*/
+/*Inicio*/
+.key {
+    animation-name: latido;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-duration: 2s;
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(0.75, 0.75);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(0.75, 0.75);
+    }
 }
