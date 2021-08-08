@@ -8,43 +8,28 @@ body {
   background-color: #002855;
   text-align: justify;
   font-family: "Source Sans Pro", sans-serif;
-  line-height: 1.5; }
-
-h1, h2, h3 {
-  color: white;
-  background-color: #33415C;
-  padding-left: 7px; }
-
-ul, ol {
-  color: white;
-  background-color: #002855; }
-
-a {
+  line-height: 1.5;
   color: white; }
-
-p {
-  color: white;
-  background-color: #002855;
-  padding: 7px; }
-
-table {
-  color: white;
-  background-color: #023e7d; }
-
-td {
-  background-color: #0353a4; }
-
-th {
-  padding: 15px 15px; }
-
-li {
-  margin: 5px 50px; }
-
-footer {
-  color: white;
-  text-align: center;
-  background-color: #33415C;
-  height: 150px; }
+  body h1, body h2, body h3 {
+    background-color: #33415C;
+    padding-left: 7px; }
+  body p {
+    background-color: #002855;
+    padding: 7px; }
+  body table {
+    background-color: #023e7d; }
+    body table th {
+      padding: 15px 15px; }
+    body table td {
+      background-color: #0353a4; }
+      body table td ul, body table td ol {
+        background-color: #002855; }
+        body table td ul li, body table td ol li {
+          margin: 5px 50px; }
+  body footer {
+    text-align: center;
+    background-color: #33415C;
+    height: 150px; }
 
 /*CLASES*/
 /*Menu*/
@@ -55,39 +40,35 @@ footer {
 
 .menu {
   background-color: #33415C; }
-
-.menu a {
-  font-size: 18px;
-  color: white;
-  text-align: center;
-  padding: 8px 8px;
-  text-decoration: none;
-  font-family: "Source Sans Pro", sans-serif; }
+  .menu a {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-family: "Source Sans Pro", sans-serif; }
 
 /*Submenu*/
 .submenu {
   float: left; }
-
-.submenu .submenuBoton {
-  font-size: 18px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 10.5px 8px;
-  background-color: #33415C;
-  font-family: "Source Sans Pro", sans-serif; }
-
-.submenuContent {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: #33415C;
-  width: 100%; }
-
-.submenuContent a {
-  float: left;
-  color: white;
-  text-decoration: none; }
+  .submenu .submenuBoton {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10.5px 8px;
+    background-color: #33415C;
+    font-family: "Source Sans Pro", sans-serif; }
+  .submenu .submenuContent {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #33415C;
+    width: 200%; }
+    .submenu .submenuContent a {
+      float: left;
+      color: white;
+      text-decoration: none; }
 
 /*Portada*/
 .fondoImagen {
@@ -179,6 +160,13 @@ footer {
   border-left: solid 25px #002855;
   background-color: #002855; }
 
+/*Contacto*/
+.textoFormulario {
+  color: white; }
+
+.bordesContacto {
+  border: solid 7px #002855; }
+
 /*OTROS*/
 /*Texto*/
 .italica {
@@ -230,7 +218,9 @@ footer {
     border-left: solid 25px #0353a4;
     background-color: #0353a4; }
   .grad {
-    background-image: linear-gradient(#0353a4, #33415C); } }
+    background-image: linear-gradient(#0353a4, #33415C); }
+  .bordesContacto {
+    border: solid 7px #0353a4; } }
 
 /*Tablet*/
 @media (min-width: 481px) {
@@ -262,7 +252,9 @@ footer {
     border-left: solid 25px #023e7d;
     background-color: #023e7d; }
   .grad {
-    background-image: linear-gradient(#023e7d, #33415C); } }
+    background-image: linear-gradient(#023e7d, #33415C); }
+  .bordesContacto {
+    border: solid 7px #023e7d; } }
 
 /*Desktop*/
 @media (min-width: 1025px) {
@@ -294,7 +286,9 @@ footer {
     border-left: solid 25px #002855;
     background-color: #002855; }
   .grad {
-    background-image: linear-gradient(#002855, #33415C); } }
+    background-image: linear-gradient(#002855, #33415C); }
+  .bordesContacto {
+    border: solid 7px #002855; } }
 
 /*TRANSICIONES*/
 /*Menú y Submenú*/

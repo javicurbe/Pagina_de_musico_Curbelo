@@ -31,51 +31,40 @@ body {
     text-align: $justi;
     font-family: $letra;
     line-height: 1.5;
-}
-
-h1, h2, h3 {
     color: $blanco;
-    background-color: $fondoGris;
-    padding-left: 7px;
-}
 
-ul, ol {
-    color: $blanco;
-    background-color: $fondoOscuro;
-}
+    h1, h2, h3 {
+            background-color: $fondoGris;
+            padding-left: 7px;
+    }
 
-a {
-    color: $blanco;
-}
+    p {
+        background-color: $fondoOscuro;
+        padding: 7px;
+    }
 
-p {
-    color: $blanco;
-    background-color: $fondoOscuro;
-    padding: 7px;
-}
+    table {
+        background-color: $fondoMedio;
+        th {
+            padding: 15px 15px;
+        }
+    
+        td {
+            background-color: $fondoClaro;
+            ul, ol {
+                background-color: $fondoOscuro;
+                li {
+                    margin: 5px 50px;
+                }
+            }
+        }
+    }
 
-table {
-    color: $blanco;
-    background-color: $fondoMedio;
-}
-
-td {
-    background-color: $fondoClaro;
-}
-
-th {
-    padding: 15px 15px;
-}
-
-li {
-    margin: 5px 50px;
-}
-
-footer {
-    color: $blanco;
-    text-align: $centrada;
-    background-color: $fondoGris;
-    height: 150px;
+    footer {
+        text-align: $centrada;
+        background-color: $fondoGris;
+        height: 150px;
+    }
 }
 
 /*CLASES*/
@@ -88,44 +77,42 @@ footer {
 
 .menu {
     background-color: $fondoGris;
-}
-
-.menu a {
-    font-size: 18px;
-    color: $blanco;
-    text-align: $centrada;
-    padding: 8px 8px;
-    text-decoration: none;
-    font-family: $letra;
+        a {
+            font-size: 18px;
+            color: $blanco;
+            text-align: $centrada;
+            padding: 8px 8px;
+            text-decoration: none;
+            font-family: $letra;
+    }
 }
 
 /*Submenu*/
 .submenu {
     float: left;
-}
+    .submenuBoton {
+        font-size: 18px;
+        border: none;
+        outline: none;
+        color: $blanco;
+        padding: 10.5px 8px;
+        background-color: $fondoGris;
+        font-family: $letra;
+    }
 
-.submenu .submenuBoton {
-    font-size: 18px;
-    border: none;
-    outline: none;
-    color: $blanco;
-    padding: 10.5px 8px;
-    background-color: $fondoGris;
-    font-family: $letra;
-}
-
-.submenuContent {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: $fondoGris;
-    width: 100%;
-}
-
-.submenuContent a {
-    float: left;
-    color: $blanco;
-    text-decoration: none;
+    .submenuContent {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: $fondoGris;
+        width: 200%;
+        a {
+            float: left;
+            color: $blanco;
+            text-decoration: none;
+        }
+    }
+    
 }
 
 /*Portada*/
@@ -238,6 +225,15 @@ footer {
     background-color: $fondoOscuro;
 }
 
+/*Contacto*/
+.textoFormulario {
+    color: $blanco;
+}
+
+.bordesContacto {
+    border: $bordes;
+}
+
 /*OTROS*/
 /*Texto*/
 .italica {
@@ -313,7 +309,13 @@ footer {
     .grad {
         background-image: linear-gradient($fondoClaro, $fondoGris);
     }
+
+    .bordesContacto {
+        border: solid 7px $fondoClaro;
+    }
 }
+    
+    
 
 
 /*Tablet*/
@@ -364,6 +366,10 @@ footer {
     .grad {
         background-image: linear-gradient($fondoMedio, $fondoGris);
     }
+
+    .bordesContacto {
+        border: solid 7px $fondoMedio;
+    }
 }
 
 /*Desktop*/
@@ -413,6 +419,10 @@ footer {
 
     .grad {
         background-image: linear-gradient($fondoOscuro, $fondoGris);
+    }
+
+    .bordesContacto {
+        border: solid 7px $fondoOscuro;
     }
 }
 
