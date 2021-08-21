@@ -97,6 +97,9 @@ body {
   margin-bottom: 10px; }
 
 /*Sobre Mí*/
+.bordesAcomodar {
+  border: solid 7px #002855; }
+
 .bordesWiki {
   border: solid 7px #002855; }
 
